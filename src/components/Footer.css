@@ -1,0 +1,233 @@
+/* Mobile-first variables & reset */
+:root{
+  --bg: #070707;
+  --card-bg: #0b0b0b;
+  --neon: #2fd506; /* neon green */
+  --muted: #9aa4b2;
+  --text: #e9eef6;
+  --glass: rgba(255,255,255,0.03);
+  --max-width: 1200px;
+  --gap: 18px;
+  --radius: 18px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+.cf-root{
+  background: var(--bg);
+  color: var(--text);
+  padding: 28px 18px;
+  display:flex;
+  justify-content:center;
+}
+
+/* inner container */
+.cf-inner{
+  width:100%;
+  max-width: var(--max-width);
+}
+
+/* top row: heading + hire button */
+.cf-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+.cf-heading{
+  font-size:28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:400;
+  color:#8b8b8b ;
+  margin:0;
+  line-height:1;
+}
+.neon{ color: var(--neon); }
+
+/* hire button */
+.cf-hire{
+  background:#2fd506;
+  color: #04110a;
+  border: none;
+  font-size: 0.8rem;
+  padding: 7px 10px;
+  border-radius: 28px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* divider */
+.cf-divider{
+  height:1px;
+  background: rgba(255,255,255,0.03);
+  margin: 18px 0;
+  border-radius:4px;
+}
+
+/* grid layout */
+.cf-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+/* columns */
+.cf-col{ padding: 6px 2px; }
+
+/* Brand column */
+.cf-brand .logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+.logo-circle{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background: var(--neon);
+  color:#04110a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  font-size:18px;
+}
+.brand-name{ font-weight:400; font-size:15px; margin-left:6px; color: rgb(222, 218, 218); font-family: Arial, Helvetica, sans-serif;}
+.brand-desc{ color:var(--muted); margin: 8px 0 14px 0; line-height:1.6; font-size:14px; padding-right: 0.4rem; }
+
+/* socials */
+.socials{ display:flex; gap:10px; margin-top:8px; }
+.social{
+  display:inline-flex;
+  font-size: 18px;
+  /* width:0px; height:40px; */
+  border-radius:50%;
+  align-items:center; justify-content:center;
+  /* background:; */
+  color:#2fd506; 
+  font-weight:700;
+  text-decoration:none;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0 6px 18px rgba(0,255,51,0.06); */
+}
+.social:hover{
+  /* background: var(--neon); */
+  color: #2fd506;
+  box-shadow: 0 8px 24px rgba(47,213,6,0.2);
+}
+
+/* nav & contact titles */
+.col-title{
+  color: var(--neon);
+  font-weight:400;
+  margin-bottom:10px;
+  font-size:16px;
+}
+
+/* nav list */
+.cf-nav ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px; }
+.cf-nav a{ color:var(--muted); text-decoration:none; font-size:12px; opacity:0.95; }
+.cf-nav a:hover{ color: var(--neon); }
+
+/* contact */
+.cf-contact .contact-item{ color:var(--muted); margin-bottom:10px; font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:1.5; }
+
+/* newsletter */
+.cf-news .newsletter{ display:flex; gap:8px; align-items:center; margin-top:6px; }
+.newsletter-input{
+  flex:1;
+  padding:12px 14px;
+  border-radius: 8px;
+  border:1px solid rgba(255,255,255,0.04);
+  background: rgba(0,0,0,0.35);
+  color:var(--text);
+  outline:none;
+}
+.newsletter-btn{
+  background:#2fd506;
+  color: #04110a;
+  border:none;
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.newsletter-btn img{
+    height: 19px;
+    width: 19px;
+
+}
+
+/* bottom */
+.cf-bottom{ margin-top:18px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.03); }
+.cf-bottom .copyright{ color:var(--muted); font-size:13px; }
+
+/* accessibility helper */
+.sr-only{ position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
+
+/* ----------------
+   RESPONSIVE: Tablet (>=640px)
+   ---------------- */
+@media (min-width: 640px){
+  .cf-heading{ font-size:36px; }
+  .cf-grid{ grid-template-columns: 1fr 1fr; }
+  .cf-brand{ order:1; }
+  .cf-nav{ order:2; }
+  .cf-contact{ order:3; }
+  .cf-news{ order:4; }
+}
+
+
+@media (max-width: 430px){
+
+  .cf-hire{
+    color: #04110a;
+    font-size: 9px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+   .cf-hire:active{
+    border: 1px solid #2fd506;
+    background-color: #04110a;
+    color: #9aa4b2;
+   }
+
+}
+/* ----------------
+   Laptop (>=1024px) — three columns layout
+   ---------------- */
+@media (min-width: 1024px){
+  .cf-top{ margin-bottom:20px; }
+  .cf-grid{
+    grid-template-columns: 1.3fr 1fr 1fr 1fr; /* brand bigger, others equal */
+    align-items:start;
+    gap: 32px;
+  }
+
+  /* .cf-brand .logo-circle{ width:56px; height:56px; font-size:20px; } */
+  .brand-name{ font-size:15px; }
+  .brand-desc{ font-size:13px; }
+
+  .cf-heading{ font-size:48px; }
+}
+
+/* ----------------
+   Desktop (>=1280px) — wider spacing
+   ---------------- */
+@media (min-width: 1280px){
+  .cf-inner{ padding: 0 18px; }
+  .cf-grid{ gap:40px; }
+  .cf-heading{ font-size:56px; }
+  .cf-hire{ padding:12px 22px; }
+  .social{ width:46px; height:46px; }
+  .newsletter-input{ padding:14px 16px; }
+}
+
+/* small design flourish for large screens: underline line across */
+@media (min-width: 900px){
+  .cf-divider{ margin-top:10px; margin-bottom:28px; background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.04), rgba(255,255,255,0.02)); height:2px; }
+}
