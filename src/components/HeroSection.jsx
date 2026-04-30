@@ -5,6 +5,7 @@ import gsap from "gsap";
 import heroImg from "../assets/heroimage.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
   import { Document, Page } from 'react-pdf';
+  // import { FaWhatsapp } from "react-icons/fa";
  import resume from '../assets/resume.pdf'
 
 
@@ -84,9 +85,10 @@ const HeroSection = () => {
   };
 
   return (
-      <section className="hero-section" aria-label="Hero">
-
-    <div className="hero-right">
+     
+     <section className="hero-section" aria-label="Hero">
+     
+         <div className="hero-right">
        
         <div className="hero-top">
           <h2 id="herotop">Hello,</h2>
@@ -114,6 +116,7 @@ const HeroSection = () => {
             <img src={heroImg} alt="Portrait of Shoaib Quraishi" />
           </div>
         </div>
+       
       </section>
     );
 };

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { FiMenu, FiX, FiSun, FiMoon, } from 'react-icons/fi'
+import { FiMenu, FiX, FiSun, FiMoon, } from 'react-icons/fi';
+  import { FaWhatsapp } from "react-icons/fa";
 import '../styles/Nav.css'
 
 const links = [
@@ -18,6 +19,9 @@ const Nav = () => {
 
 	return (
 		<header className="site-header">
+			  <div className="cta-btn">
+				   <a href="https://wa.me/qr/EXDPSY577V5AO1" className="social-cta" aria-label="whatapp"><FaWhatsapp /></a>
+				   </div>
 			<div className="container header-inner">
 				<div className="brand">
 					<img src="/src/assets/logoImage.png" alt="logo" className="brand-logo" />

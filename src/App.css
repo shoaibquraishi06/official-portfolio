@@ -97,10 +97,30 @@ background-color: #090909;
 }
 
 
-
-
+.cta-btn .social-cta{
+	position: fixed;
+	top: 900%;
+	left:92%;
+  height: 43px;
+  width: 43px;
+  font-size: 1.2rem;
+	background: #30FB01;
+	color: rgb(0, 0, 0);
+	padding: 0.5rem 0.7rem;
+  border: 1px solid #30FB01;
+	border-radius: 50%;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: background-color 200ms ease, transform 200ms ease;
+	cursor: pointer;
+	z-index: 99999999990;
+}
 
 @media   (max-width: 767px){
+
+.cta-btn .social-cta{
+  top: 1545%;
+    left: 90%;
+}
 
 .menu-bar{
   display: block;
@@ -329,7 +349,20 @@ background-color: #090909;
  box-shadow: 0px 0px 18px -3px #27b008;
 }
 
-
+/* .social{
+	position: absolute;
+	top:10%;
+	left:100%;
+	background: #05e959;
+	color: white;
+	padding: 0.5rem 0.75rem;
+  border: 1px solid #30FB01;
+	border-radius: 50%;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: background-color 200ms ease, transform 200ms ease;
+	cursor: pointer;
+	z-index: 999990;
+} */
 
 .about-text p {
   font-size: 0.99rem;
