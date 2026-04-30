@@ -1,6 +1,6 @@
 import React from "react";
-import "./pricing2.css";
-import "./pricingAnimation.css";
+// import "../styles/pricing2.css";
+// import "./pricingAnimation.css";
 
 const plans = [
   {

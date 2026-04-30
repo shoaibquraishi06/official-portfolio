@@ -301,6 +301,8 @@
 
 }
 
-/* Small visual adjustments */
+/*  Small visual adjustments  */
 .main-nav .nav-link { color: #ffffff; }
-.main-nav .nav-link .nav-icon { color: var(--accent) }
+.main-nav .nav-link .nav-icon { 
+	color: var(--accent);
+ }

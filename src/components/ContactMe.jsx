@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './ContactMe.css'
+import '../styles/ContactMe.css'
 import { MdOutlineEmail, MdPhone, MdLocationOn } from 'react-icons/md'
 
 const ContactMe = () => {
@@ -15,7 +15,7 @@ const ContactMe = () => {
       return
     }
     setStatus('Sending...')
-    // Placeholder: simulate async send
+    
     setTimeout(() => {
       setStatus('Message sent — I will reply soon.')
       setForm({ name: '', email: '', message: '' })

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Skills.css'
+import '../styles/Skills.css'
 
 const skillsList = [
   { name: 'HTML', src: 'https://img.icons8.com/color/48/000000/html-5.png', alt: 'HTML5 logo' },
@@ -25,17 +25,6 @@ const skillsList2 = [
   { name: 'ESLint', src: 'https://img.icons8.com/color/48/000000/eslint.png', alt: 'ESLint logo' },
   { name: 'Prettier', src: 'https://img.icons8.com/color/48/000000/prettier.png', alt: 'Prettier logo' }
 ]
-
-
-
-
-
-
-
-
-  
-
-
 
 function SkillRow({ items, direction = 'left', duration = 20 }) {
   const display = [...items, ...items]

@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Footer.css";
+import "../styles/Footer.css";
 import logo from "../assets/logoImage.png";
 import fotterArrow from "../assets/fotterArrow.png"
 import { FaInstagram } from "react-icons/fa";
@@ -26,7 +26,7 @@ export default function ConnectFooter() {
         <div className="cf-divider" role="presentation" />
 
         <div className="cf-grid">
-          {/* Column 1: brand + about + socials */}
+       
           <div className="cf-col cf-brand">
             <div className="logo">
               <div className="logo-circle"><img src={logo} alt="Logo" /></div>
@@ -38,7 +38,7 @@ export default function ConnectFooter() {
             </p>
 
             <div className="socials" aria-label="social links">
-              {/* Simple circle icons (SVG can be replaced with real icons) */}
+              
               <a href="https://www.instagram.com/__codecanvas/" className="social" aria-label="Instagram"><FaInstagram /></a>
               <a href="https://www.linkedin.com/in/shoaib-quraishi-047155288/" className="social" aria-label="linkdin"><CiLinkedin /></a>
               <a href="https://github.com/shoaibquraishi06/" className="social" aria-label="Github"><FaGithub /></a>
@@ -47,7 +47,7 @@ export default function ConnectFooter() {
             </div>
           </div>
 
-          {/* Column 2: Navigation */}
+        
           <nav className="cf-col cf-nav" aria-label="footer navigation">
             <h3 className="col-title">Navigation</h3>
             <ul>
@@ -60,7 +60,7 @@ export default function ConnectFooter() {
             </ul>
           </nav>
 
-          {/* Column 3: Contact */}
+         
           <address className="cf-col cf-contact">
             <h3 className="col-title">Contact</h3>
             <p className="contact-item">+91 8420680130</p>
@@ -71,7 +71,7 @@ export default function ConnectFooter() {
             </p>
           </address>
 
-          {/* Column 4: Newsletter */}
+   
           <div className="cf-col cf-news">
             <h3 className="col-title">Get the latest information</h3>
 
@@ -80,7 +80,7 @@ export default function ConnectFooter() {
               onSubmit={(e) => {
                 e.preventDefault();
                 const email = e.target.email.value;
-                // placeholder: handle subscription
+               
                 alert(`Subscribed: ${email}`);
                 e.target.reset();
               }}
@@ -100,7 +100,7 @@ export default function ConnectFooter() {
         </div>
 
         <div className="cf-bottom">
-          <p className="copyright">© {new Date().getFullYear()} Oliver. All rights reserved.</p>
+          <p className="copyright">© {new Date().getFullYear()} codeCanvas. All rights reserved.</p>
         </div>
       </div>
     </footer>

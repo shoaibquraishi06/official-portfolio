@@ -1,4 +1,4 @@
-/* HeroSection typing effect and responsive styles */
+
 .hero-section {
 	display: grid;
 	grid-template-columns: 1fr 420px;
@@ -27,7 +27,7 @@
 
 .typed {
 	display: inline-block;
-	min-width: 12ch; /* prevents layout jump */
+	min-width: 12ch; 
 }
 
 .cursor {
@@ -46,7 +46,7 @@
 	50% { opacity: 0 }
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
 	.hero-section {
 		grid-template-columns: 1fr;
@@ -64,15 +64,15 @@
 }
    
 
-/* small-screen fallback for cursor visibility */
+
 @media (max-width: 420px) {
 	.cursor { display: inline-block; }
 }
 
-/* hero left photo */
+
 .hero-photo{
 	position: relative;
-	overflow: hidden; /* contain overlay and any transform */
+	overflow: hidden; 
 	width: 100%;
 }
 .hero-photo img{
@@ -81,7 +81,7 @@
 	border-radius: 12px;
 	object-fit: cover;
 	box-shadow: 0 20px 50px rgba(2,6,23,0.35);
-	/* fade-in on load */
+	
 	opacity: 0;
 	transform: translateY(6px) scale(1);
 	  background: linear-gradient(to top, #151515, #0a0a0a);
@@ -90,7 +90,7 @@
 	will-change: opacity, transform;
 }
 
-/* subtle overlay and lift on hover */
+
 .hero-photo::after{
 	content: "";
 	position: absolute;
@@ -108,7 +108,7 @@
 	to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* Respect user preference for reduced motion */
+
 @media (prefers-reduced-motion: reduce){
 	.hero-photo img{ animation: none; transition: none; opacity: 1; transform: none }
 	.hero-photo::after{ transition: none }
@@ -127,7 +127,7 @@
 	.hero-right{ text-align: center }
 }
 
-/* small motion fallback */
+
 @media (prefers-reduced-motion: reduce){
 	.cursor{ animation: none }
 }

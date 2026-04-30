@@ -1,9 +1,9 @@
 :root{
-  --bg:#090909; /* dark background similar to hero */
+  --bg:#090909;  
   --card: rgba(255,255,255,0.04);
   --glass: rgba(255,255,255,0.03);
-  --accent1:#2bff00; /* purple */
-  --accent2:#06b6d4; /* cyan */
+  --accent1:#2bff00; 
+  --accent2:#06b6d4; 
   --muted: #9aa3c7;
 }
 
@@ -34,7 +34,7 @@
 .contact-top h4{
 	font-size: 2.5rem;
 	font-family:sans-serif;
-	/* text-align: center; */
+	
 		font-weight: 300;
 	color: #e3dede;
 }
@@ -47,7 +47,7 @@
 
 
 #con-top{
-  /* position: absolute; */
+
   top: 0;
     font-size: 10vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -191,7 +191,7 @@
 .btn-primary{
 	  font-size: 10px;
         font-weight: 550;
-        /* margin-top: 6vw; */
+       
         font-family: Arial, Helvetica, sans-serif;
         padding: 0.6rem 1rem;
 		margin-top: 1rem;
@@ -222,12 +222,12 @@
 
 
 .status{ color:#111; font-size:.95rem }
-/* .status:active{
+ .status:active{
   color: #dbe6ff;
   background: var(--accent);
   border: 1px solid var(--accent);
-} */
-/* Responsive */
+} 
+
 @media (max-width:900px){
   .contact-grid{ grid-template-columns: 1fr; }
   .btn-primary{

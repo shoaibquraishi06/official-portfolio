@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pricing.css";
+import "../styles/pricing.css";
 import writeIcon from "../assets/right-icom.png"
 import crossIcon from "../assets/cross-icon.png"
 import arrowIcon from "../assets/arrow-icon.png"
@@ -54,17 +54,7 @@ const plans = [
 export default function Pricing() {
   return (
     <div className="pricing-container">
-      {/* <header className="pricing-top">
-        <div>
-          <span className="tag">Pricing Table</span>
-          <h1 className="title">
-            My <span>Pricing Model</span>
-          </h1>
-          <p className="subtitle">Choose a plan that fits your needs.</p>
-        </div>
-
-        <button className="cta">Get Started </button>
-      </header> */}
+    
 
              <div className="pricing-top">
         <h5>Pricing Table</h5>

@@ -1,4 +1,4 @@
-/* Skills.css - infinite smooth horizontal slider */
+
 .skills-section {
   padding: 3rem 1rem;
   background: transparent;
@@ -28,7 +28,7 @@
 .skill-top h4{
 	font-size: 2.5rem;
 	font-family: Arial, Helvetica, sans-serif;
-	/* text-align: center; */
+	
 		font-weight: 300;
 	color: #e3dede;
 }
@@ -54,7 +54,7 @@
   width: 100%;
 }
 
-/* container for multiple stacked rows */
+
 .multi-rows {
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@
   top: 0;
   bottom: 0;
   width: 3rem;
-  /* soft multi-stop RGBA gradient for a smoother fade */
+ 
   pointer-events: none;
   z-index: 2;
   background: linear-gradient(to right,
@@ -80,7 +80,7 @@
     rgba(0,0,0,0.35) 30%,
     rgba(0,0,0,0.12) 60%,
     rgba(0,0,0,0) 100%);
-  /* gentle blur where supported */
+  
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
   will-change: opacity, transform;
@@ -92,7 +92,7 @@
   top: 0;
   bottom: 0;
   width: 3rem;
-  /* mirrored soft gradient for the right edge */
+ 
   pointer-events: none;
   z-index: 2;
   background: linear-gradient(to left,
@@ -119,7 +119,7 @@
   display: flex;
   gap: var(--gap, 2rem);
   align-items: center;
-  /* allow animation duration to be scaled by a speed factor for responsive tuning */
+  
   --speed-factor: 1;
 }
 
@@ -130,11 +130,11 @@
   padding: 0.25rem 0.4rem;
   min-width: clamp(80px, 12vw, 140px);
 }
-/* 
+ 
 .skill img {
   width: 1vw;
   height: 1vw;
-} */
+} 
 
 .skill h4 {
   font-family: Arial, Helvetica, sans-serif;
@@ -143,7 +143,7 @@
   font-size: clamp(0.9rem, 1.6vw, 1.15rem);
 }
 
-/* animation - left and right directions */
+
 .skill-row.right .track-inner {
   animation: scroll-right calc(var(--dur, 15s) * var(--speed-factor)) linear infinite;
 }
@@ -160,7 +160,7 @@
   100% { transform: translateX(0) }
 }
 
-/* pause on hover */
+
 .skill-row:hover .track-inner { animation-play-state: paused }
 
 @media (max-width: 600px) {
@@ -202,7 +202,7 @@
   top: 0;
   bottom: 0;
   width: 3=1rem;
-  /* soft multi-stop RGBA gradient for a smoother fade */
+ 
   pointer-events: none;
   z-index: 2;
   background: linear-gradient(to right,
@@ -210,7 +210,7 @@
     rgba(0,0,0,0.35) 30%,
     rgba(0,0,0,0.12) 60%,
     rgba(0,0,0,0) 100%);
-  /* gentle blur where supported */
+
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
   will-change: opacity, transform;
@@ -221,7 +221,7 @@
   top: 0;
   bottom: 0;
   width: 1rem;
-  /* mirrored soft gradient for the right edge */
+ 
   pointer-events: none;
   z-index: 2;
   background: linear-gradient(to left,

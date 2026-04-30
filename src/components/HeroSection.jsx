@@ -1,23 +1,24 @@
 
 import React, { useEffect, useState, useRef } from "react";
+// import  './HeroSection.css'
 import gsap from "gsap";
 import heroImg from "../assets/heroimage.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
   import { Document, Page } from 'react-pdf';
  import resume from '../assets/resume.pdf'
-// import TextType from './TextType';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
-  // Typewriter state
+ 
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(120);
   const mounted = useRef(true);
 
-  // The roles to type (assumption: standard capitalization)
+  
   const roles = ["FullStack Developer", "Frontend Developer", "Backend Developer"];
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const HeroSection = () => {
         return fullText.substring(0, prev.length + 1);
       });
 
-      // adjust speeds and states
+    
       if (!isDeleting && text === fullText) {
         setIsDeleting(true);
         setTypingSpeed(600);
@@ -45,10 +46,9 @@ const HeroSection = () => {
     }, typingSpeed);
 
     return () => clearTimeout(tick);
-    // note: text/isDeleting/loopNum are fine here to drive the typing; keep deps
+   
   }, [text, isDeleting, loopNum, typingSpeed]);
 
-  // GSAP entrance animations using ScrollTrigger
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from('.hero-photo', {
@@ -72,9 +72,9 @@ const HeroSection = () => {
     return () => ctx.revert();
   }, []);
 
-  // PDF download handler
+  
   const handleDownloadPDF = () => {
-    // Create a temporary link to trigger download
+   
     const link = document.createElement('a');
     link.href = resume;
     link.download = 'resume.pdf';
@@ -92,7 +92,7 @@ const HeroSection = () => {
           <h2 id="herotop">Hello,</h2>
           <h1 className="hero-title">
             <span id="hero-name">I'm Shoaib Quraishi,<br></br></span>
-            {/* Typed work roles (only this tag in hero-title h1) */}
+          
             <span className="work"> <span className="typed" aria-live="polite">{text}</span>
             <span className="cursor" aria-hidden="true">|</span> <br /></span>
             <span id="hero-name" >Web Developer</span>

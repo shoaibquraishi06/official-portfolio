@@ -1,5 +1,5 @@
 import React from 'react'
-import './Projects.css'
+import '../styles//Projects.css'
 import portfolioImage from '../assets/portfolio1.png'
 import Chatgpt from '../assets/ChatGPT.png'
 // import { FaGithub } from "react-icons/fa";
@@ -111,7 +111,7 @@ const Projects = () => {
                        
                        <div className="pro-card-med">
                      
-                        {/* <h4>React</h4> */}
+                     
                          <h4>Node.js</h4>
                          <h4>Express</h4>
                          <h4>Mongo DB</h4>
@@ -149,7 +149,7 @@ const Projects = () => {
      </div>
     
     
-       {/* <div className="end-line"></div> */}
+    
    </section>
   
   )

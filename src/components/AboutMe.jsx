@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import heroImg from  "../assets/heroimage.png"
-import './AboutMe.css'
+import '../styles/AboutMe.css'
 
 const AboutMe = () => {
   useEffect(() => {

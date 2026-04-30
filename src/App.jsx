@@ -16,7 +16,7 @@ function App() {
 
      const lenis = new Lenis();
 
-// Use requestAnimationFrame to continuously update the scroll
+
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
@@ -25,7 +25,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 
     })
-// Initialize Lenis
+
  
  
  
@@ -35,8 +35,7 @@ requestAnimationFrame(raf);
      
      <Nav />
       <Mainroutes />
-      {/* <PricingAnimation /> */}
-      {/* <Footer /> */}
+     
     </>
   )
 }
