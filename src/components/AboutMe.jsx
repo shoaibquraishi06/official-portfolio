@@ -37,7 +37,7 @@ const AboutMe = () => {
       <div className="about-main">
         <div className="about-left reveal">
           <div className="image-wrap">
-            <img src={heroImg} alt="Portrait" />
+            <img  loading="lazy" src={heroImg} alt="Portrait" />
           </div>
         </div>
 

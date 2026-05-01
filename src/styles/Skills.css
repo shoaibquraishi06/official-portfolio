@@ -1,46 +1,48 @@
-
 .skills-section {
   padding: 3rem 1rem;
   background: transparent;
 }
-#skills{
+
+#skills {
   position: relative;
 }
 
 
-.skill-top{
-	position: absolute;
-	left: 4.8%;
-	top: 6%;
-	row-gap: 50px;
+.skill-top {
+  position: absolute;
+  left: 4.8%;
+  top: 6%;
+  row-gap: 50px;
 }
 
-.skill-top h5{
-	font-size: 1.1rem;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #9b9b9b;
-	font-weight: 500;
-	padding: 0.2rem 0.5rem;
-	width: fit-content;
-	border-bottom: 0.1px solid #26d203;
-	margin-bottom: 4rem;
-}
-.skill-top h4{
-	font-size: 2.5rem;
-	font-family: Arial, Helvetica, sans-serif;
-	
-		font-weight: 300;
-	color: #e3dede;
+.skill-top h5 {
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9b9b9b;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+  border-bottom: 0.1px solid #26d203;
+  margin-bottom: 4rem;
 }
 
-.skill-top h4 span{
-	-webkit-text-stroke: 0.5px #00e113cb ;
-	color:transparent ;
+.skill-top h4 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-weight: 300;
+  color: #e3dede;
 }
+
+.skill-top h4 span {
+  -webkit-text-stroke: 0.5px #00e113cb;
+  color: transparent;
+}
+
 .skills-title {
   text-align: center;
   margin-bottom: 8rem;
-  
+
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
@@ -66,40 +68,40 @@
   position: relative;
 }
 
-.left-shadow{
+.left-shadow {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   width: 3rem;
- 
+
   pointer-events: none;
   z-index: 2;
   background: linear-gradient(to right,
-    rgba((59, 58, 58)) 0%,
-    rgba(0,0,0,0.35) 30%,
-    rgba(0,0,0,0.12) 60%,
-    rgba(0,0,0,0) 100%);
-  
+      rgba((59, 58, 58)) 0%,
+      rgba(0, 0, 0, 0.35) 30%,
+      rgba(0, 0, 0, 0.12) 60%,
+      rgba(0, 0, 0, 0) 100%);
+
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
   will-change: opacity, transform;
 }
 
-.right-shadow{
+.right-shadow {
   position: absolute;
   right: 10%;
   top: 0;
   bottom: 0;
   width: 3rem;
- 
+
   pointer-events: none;
   z-index: 2;
   background: linear-gradient(to left,
-    rgba((59, 58, 58)) 0%,
-    rgba(0,0,0,0.35) 30%,
-    rgba(0,0,0,0.12) 60%,
-    rgba(0,0,0,0) 100%);
+      rgba((59, 58, 58)) 0%,
+      rgba(0, 0, 0, 0.35) 30%,
+      rgba(0, 0, 0, 0.12) 60%,
+      rgba(0, 0, 0, 0) 100%);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
   will-change: opacity, transform;
@@ -119,7 +121,7 @@
   display: flex;
   gap: var(--gap, 2rem);
   align-items: center;
-  
+
   --speed-factor: 1;
 }
 
@@ -130,11 +132,11 @@
   padding: 0.25rem 0.4rem;
   min-width: clamp(80px, 12vw, 140px);
 }
- 
+
 .skill img {
   width: 1vw;
   height: 1vw;
-} 
+}
 
 .skill h4 {
   font-family: Arial, Helvetica, sans-serif;
@@ -147,118 +149,189 @@
 .skill-row.right .track-inner {
   animation: scroll-right calc(var(--dur, 15s) * var(--speed-factor)) linear infinite;
 }
+
 .skill-row.left .track-inner {
   animation: scroll-left calc(var(--dur, 15s) * var(--speed-factor)) linear infinite;
 }
 
 @keyframes scroll-left {
-  0% { transform: translateX(0) }
-  100% { transform: translateX(-50%) }
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-50%)
+  }
 }
+
 @keyframes scroll-right {
-  0% { transform: translateX(-50%) }
-  100% { transform: translateX(0) }
+  0% {
+    transform: translateX(-50%)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
 }
 
 
-.skill-row:hover .track-inner { animation-play-state: paused }
+.skill-row:hover .track-inner {
+  animation-play-state: paused
+}
 
 @media (max-width: 600px) {
-  .skill { min-width: clamp(70px, 20vw, 100px) }
-  .skill img { width: clamp(18px, 6vw, 24px); height: clamp(18px, 6vw, 24px) }
-  .skill-row .track-inner { --gap: 1.9rem; 
-    --speed-factor: 0.85 }
+  .skill {
+    min-width: clamp(70px, 20vw, 100px)
+  }
+
+  .skill img {
+    width: clamp(18px, 6vw, 24px);
+    height: clamp(18px, 6vw, 24px)
+  }
+
+  .skill-row .track-inner {
+    --gap: 1.9rem;
+    --speed-factor: 0.85
+  }
 
   .skill-top h5 {
     margin-bottom: 1rem;
   }
 
-   .skill-top h4{
+  .skill-top h4 {
     font-size: 1.7rem;
     font-weight: 500;
-   }
+  }
 
 
-    .skills-title {
-      font-size: 13vw;
+  .skills-title {
+    font-size: 13vw;
 
-      text-align: center;
-      flex-wrap: nowrap;
-      font-family: Arial, Helvetica, sans-serif;
-      -webkit-text-stroke: 1px #3b3a3a;
-      color: transparent;
-    }
-    .multi-rows{
-      margin-left: 1rem;
-    }
-    .skill-row .track {
-  width: 95%;
-  overflow: hidden;
-}
+    text-align: center;
+    flex-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 1px #3b3a3a;
+    color: transparent;
+  }
 
-.left-shadow{
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3=1rem;
- 
-  pointer-events: none;
-  z-index: 2;
-  background: linear-gradient(to right,
-    rgba((59, 58, 58)) 0%,
-    rgba(0,0,0,0.35) 30%,
-    rgba(0,0,0,0.12) 60%,
-    rgba(0,0,0,0) 100%);
+  .multi-rows {
+    margin-left: 1rem;
+  }
 
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
-  will-change: opacity, transform;
-}
-.right-shadow{
-  position: absolute;
-  right: 10%;
-  top: 0;
-  bottom: 0;
-  width: 1rem;
- 
-  pointer-events: none;
-  z-index: 2;
-  background: linear-gradient(to left,
-    rgba((59, 58, 58)) 0%,
-    rgba(0,0,0,0.35) 30%,
-    rgba(0,0,0,0.12) 60%,
-    rgba(0,0,0,0) 100%);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
-  will-change: opacity, transform;
-}
+  .skill-row .track {
+    width: 95%;
+    overflow: hidden;
+  }
+
+  .left-shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3=1rem;
+
+    pointer-events: none;
+    z-index: 2;
+    background: linear-gradient(to right,
+        rgba((59, 58, 58)) 0%,
+        rgba(0, 0, 0, 0.35) 30%,
+        rgba(0, 0, 0, 0.12) 60%,
+        rgba(0, 0, 0, 0) 100%);
+
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    will-change: opacity, transform;
+  }
+
+  .right-shadow {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    bottom: 0;
+    width: 1rem;
+
+    pointer-events: none;
+    z-index: 2;
+    background: linear-gradient(to left,
+        rgba((59, 58, 58)) 0%,
+        rgba(0, 0, 0, 0.35) 30%,
+        rgba(0, 0, 0, 0.12) 60%,
+        rgba(0, 0, 0, 0) 100%);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    will-change: opacity, transform;
+  }
 
 
 
 }
 
 @media (min-width: 600px) {
-  .skill-row .track-inner { --gap: 2.5rem; --speed-factor: 1 }
-  .skill img { width: clamp(10px, 4.5vw, 20px); height: clamp(10px, 4.5vw, 20px) }
+  .skill-row .track-inner {
+    --gap: 2.5rem;
+    --speed-factor: 1
+  }
 
-   .skill-row .track-inner { --gap: 1.2rem; --speed-factor: 0.85 }
-  
-    .skills-title{
-      font-size: 4.2rem;
-      font-family: Arial, Helvetica, sans-serif;
-      -webkit-text-stroke: 1px  #3b3a3a;
-      color: transparent;
-    }
+  .skill img {
+    width: clamp(10px, 4.5vw, 20px);
+    height: clamp(10px, 4.5vw, 20px)
+  }
 
-    .skill-top h5{
-      margin-bottom: 2rem;
-    }
+  .skill-row .track-inner {
+    --gap: 1.2rem;
+    --speed-factor: 0.85
+  }
 
-    .skill-top h4{
-      font-size: 2.4rem;
+  .skills-title {
+    font-size: 4.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 1px #3b3a3a;
+    color: transparent;
+  }
 
-    }
+  .skill-top h5 {
+    margin-bottom: 2rem;
+  }
+
+  .skill-top h4 {
+    font-size: 2.4rem;
 
   }
 
+}
+@media(max-width: 600px) {
+  .skill-row .track-inner {
+    --gap: 2.5rem;
+    --speed-factor: 1
+  }
+
+  .skill img {
+    width: clamp(10px, 4.5vw, 20px);
+    height: clamp(10px, 4.5vw, 20px)
+  }
+
+  .skill-row .track-inner {
+    --gap: 1.2rem;
+    --speed-factor: 0.85
+  }
+
+  .skills-title {
+    font-size: 4.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 1px #3b3a3a;
+    color: transparent;
+  }
+
+  .skill-top h5 {
+    margin-bottom: 2rem;
+  }
+  .skills-title  {
+   font-size:3.5rem;
+  }
+
+  .skill-top h4 {
+    font-size: 2.4rem;
+
+  }
+
+}

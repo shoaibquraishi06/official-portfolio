@@ -24,7 +24,7 @@ const Nav = () => {
 				   </div>
 			<div className="container header-inner">
 				<div className="brand">
-					<img src="/src/assets/logoImage.png" alt="logo" className="brand-logo" />
+					<img  loading="lazy" src="/src/assets/logoImage.png" alt="logo" className="brand-logo" />
 					<span className="brand-title">CodeCanvas</span>
 				</div>
 

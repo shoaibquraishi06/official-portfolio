@@ -100,26 +100,35 @@ background-color: #090909;
 .cta-btn .social-cta{
 	position: fixed;
 	top: 900%;
-	left:92%;
+	left:20%;
   height: 43px;
   width: 43px;
   font-size: 1.2rem;
-	background: #30FB01;
-	color: rgb(0, 0, 0);
+
+	color: #30FB01;
 	padding: 0.5rem 0.7rem;
-  border: 1px solid #30FB01;
-	border-radius: 50%;
+  border: 0.5px solid #2ffb0155;
+	border-radius: 50%;	
+ 
+     background: #95919138; 
+     backdrop-filter: blur(10px);
 	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
 	transition: background-color 200ms ease, transform 200ms ease;
 	cursor: pointer;
 	z-index: 99999999990;
 }
 
+
 @media   (max-width: 767px){
 
 .cta-btn .social-cta{
-  top: 1545%;
-    left: 90%;
+  top: 1150%;
+    left: 85%;
+     font-size: 1.3rem;
+    	padding: 0.55rem 0.7rem; 
+     backdrop-filter: blur(10px);
+       background: #29282838; 
+  
 }
 
 .menu-bar{
@@ -455,6 +464,12 @@ background-color: #090909;
     
 @media (min-width:768px)  and (max-width: 992px) {
 
+  .cta-btn .social-cta{
+    top: 900%;
+    left: 90%;
+     
+    
+  }
    .menu-bar{
   display: block;
 }
@@ -813,7 +828,23 @@ background-color: #090909;
 }
 
 @media (min-width: 992px)  {
-
+.cta-btn .social-cta{
+	position: fixed;
+	top: 900%;
+	left:93%;
+  height: 43px;
+  width: 43px;
+  font-size: 1.2rem;
+	background: #30FB01;
+	color: rgb(0, 0, 0);
+	padding: 0.5rem 0.7rem;
+  border: 1px solid #30FB01;
+	border-radius: 50%;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: background-color 200ms ease, transform 200ms ease;
+	cursor: pointer;
+	z-index: 99999999990;
+}
   /* .header{
     
   } */
