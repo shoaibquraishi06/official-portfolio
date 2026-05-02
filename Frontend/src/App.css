@@ -60,7 +60,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background-color: #000;
 }
   
@@ -123,7 +123,7 @@ background-color: #090909;
 
 .cta-btn .social-cta{
   top: 1150%;
-    left: 85%;
+    left: 100%;
      font-size: 1.3rem;
     	padding: 0.55rem 0.7rem; 
      backdrop-filter: blur(10px);
@@ -188,6 +188,7 @@ background-color: #090909;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 3rem;
   gap: 1rem;
  
 
@@ -467,11 +468,8 @@ background-color: #090909;
 
   .cta-btn .social-cta{
     top: 900%;
-    left: 90%;
-    
-     
-    
-  }
+    left: 95%;
+     }
    .menu-bar{
   display: block;
 }
@@ -834,7 +832,7 @@ background-color: #090909;
 .cta-btn .social-cta{
 	position: fixed;
 	top: 900%;
-	left:93%;
+	left:115%;
   height: 43px;
   width: 43px;
   font-size: 1.2rem;
