@@ -335,7 +335,8 @@
 	}
 
 	.site-header .container {
-
+        left: 13%;
+		margin-top: 15	px;
 		border-radius: 30px;
 		/* border: 1px solid var(--muted); */
 	}
