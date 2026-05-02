@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
-import logo from "../assets/logoImage.png";
+import Logo from "../assets/Logo.png";
 import fotterArrow from "../assets/fotterArrow.png"
 import { FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -29,7 +29,7 @@ export default function ConnectFooter() {
        
           <div className="cf-col cf-brand">
             <div className="logo">
-              <div className="logo-circle"><img src={logo} alt="Logo" /></div>
+              <div className="logo-circle"><img src={Logo} alt="Logo" /></div>
               <div className="brand-name">codeCanvas</div>
             </div>
 
