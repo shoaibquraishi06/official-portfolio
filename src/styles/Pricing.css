@@ -18,14 +18,18 @@
 }
 
 .heading {
-  font-size: 26px;
+  font-size: 25px;
   margin-bottom: 30px;
+  color: #a6a1a1;
+  /* width: fit-content; */
+  font-family:Arial, Helvetica, sans-serif;
+  /* border-bottom: 1px solid #08db394a; */
 }
 
 /* ===== Grid Layout ===== */
 .pricing-grid {
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 
 /* Mobile default */
