@@ -1,8 +1,8 @@
 import React from 'react'
-import Postman from "../assets/postman.png"
+import Postman from "../assets/Postman.png"
 import N8n from "../assets/n8n-icon.png"
-import Github from "../assets/GitHub_Invertocat_White.png"
-import Docker from "../assets/docker.png"
+import Github from "../assets/GitHub-White.png"
+import Docker from "../assets/Docker.png"
 import AWS from "../assets/AWS.png"
 import '../styles/Skills.css'
 

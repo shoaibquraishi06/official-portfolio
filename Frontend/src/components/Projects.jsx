@@ -2,7 +2,7 @@ import React from "react";
 import "../styles//Projects.css";
 import portfolioImage from "../assets/portfolio1.png";
 import microservices from "../assets/nikeProject.png";
-import Chatgpt from "../assets/ChatGPT.png";
+import Chatgpt from "../assets/chatgpt.png";
 // import { FaGithub } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import { LuExternalLink } from "react-icons/lu";
