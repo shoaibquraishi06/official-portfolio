@@ -467,6 +467,7 @@ background-color: #090909;
   .cta-btn .social-cta{
     top: 900%;
     left: 90%;
+    
      
     
   }
@@ -583,6 +584,7 @@ background-color: #090909;
 
  #hero-name{
   color: #b9bbb9;
+  font-size: 2rem;
  }
  .hero-title span{
   color: #36fc04;
@@ -835,12 +837,13 @@ background-color: #090909;
   height: 43px;
   width: 43px;
   font-size: 1.2rem;
-	background: #30FB01;
-	color: rgb(0, 0, 0);
+  backdrop-filter: blur(10px);
+	background: #1717173f;
+	color: #30FB01;
 	padding: 0.5rem 0.7rem;
-  border: 1px solid #30FB01;
+  border: 0.5px solid #2ffb0114;
 	border-radius: 50%;
-	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	box-shadow: 0 4px 12px rgba(37, 100, 50, 0.4);
 	transition: background-color 200ms ease, transform 200ms ease;
 	cursor: pointer;
 	z-index: 99999999990;
@@ -918,7 +921,7 @@ background-color: #090909;
   font-size: 2.8rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
-  color: #8f8f8f;
+  color: #757272;
  
 
   padding-left: 2.9rem;
@@ -944,15 +947,19 @@ background-color: #090909;
     color: #26b8069d;
   }
 #hero-name{
+  display: inline;
    -webkit-text-stroke: 0.1px #27b008;
-  color: #b8b6b6;
+  color: #7b7878;
+  font-size: 2.7rem;
+  
  }
 
 .hero-description{
   font-size: 0.8rem;
   text-align: start;
   font-family: Arial, Helvetica, sans-serif;
-  color: #949393;
+  color: #bcb6b6;
+  line-height: 1.35;
   width: 80%;
   opacity: 0.7;
   padding: 1.5rem 5rem 0 1rem;

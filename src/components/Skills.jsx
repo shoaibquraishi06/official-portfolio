@@ -1,4 +1,9 @@
 import React from 'react'
+import Postman from "../assets/postman.png"
+import N8n from "../assets/n8n-icon.png"
+import Github from "../assets/GitHub_Invertocat_White.png"
+import Docker from "../assets/docker.png"
+import AWS from "../assets/AWS.png"
 import '../styles/Skills.css'
 
 const skillsList = [
@@ -17,13 +22,12 @@ const skillsList = [
 
 const skillsList2 = [
   { name: 'Git', src: 'https://img.icons8.com/color/48/000000/git.png', alt: 'Git logo' },
-  { name: 'Postman', src: 'https://img.icons8.com/color/48/000000/postman.png', alt: 'Postman logo' },
+  { name: 'Postman', src: Postman, alt: 'Postman logo' },
   { name: 'Figma', src: 'https://img.icons8.com/color/48/000000/figma.png', alt: 'Figma logo' },
-  { name: 'Jest', src: 'https://img.icons8.com/color/48/000000/jest.png', alt: 'Jest logo' },
-  { name: 'Webpack', src: 'https://img.icons8.com/color/48/000000/webpack.png', alt: 'Webpack logo' },
-  { name: 'Babel', src: 'https://img.icons8.com/color/48/000000/babel.png', alt: 'Babel logo' },
-  { name: 'ESLint', src: 'https://img.icons8.com/color/48/000000/eslint.png', alt: 'ESLint logo' },
-  { name: 'Prettier', src: 'https://img.icons8.com/color/48/000000/prettier.png', alt: 'Prettier logo' }
+ { name: 'Github', src: Github, alt: 'Github logo' },
+  { name: 'N8n', src: N8n, alt: 'N8n logo' },
+  { name: 'Docker', src: Docker, alt: 'Docker logo' },
+  { name: 'AWS', src: AWS, alt: 'AWS logo' }
 ]
 
 function SkillRow({ items, direction = 'left', duration = 20 }) {

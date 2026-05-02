@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
   import { Document, Page } from 'react-pdf';
   // import { FaWhatsapp } from "react-icons/fa";
  import resume from '../assets/resume.pdf'
+//  import libary from  "../components/TextType"
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -97,16 +98,17 @@ const HeroSection = () => {
           
             <span className="work"> <span className="typed" aria-live="polite">{text}</span>
             <span className="cursor" aria-hidden="true">|</span> <br /></span>
-            <span id="hero-name" >Web Developer</span>
+            <span id="hero-name" >I Build Fast, Beautiful Websites <br /> for Startups & Businesses</span>
           </h1>
         </div>
+
         <div className="hero-text">
           <p className="hero-description">
-           I'm an expericned in Web development with 1+ years in field. collaboration with various companies and startups.
+         Is your business online but not getting results. I deliver websites that don't just look great they convert visitors into customers.20+ projects completed, 100% client satisfaction.
           </p>
 
           <div className="hero-button">
-          <button id="button1" onClick={handleDownloadPDF}> CV Download</button>
+          <button id="button1" >Book a Call</button>
           <button id="button2">View Work</button>
           </div>
         </div>

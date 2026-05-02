@@ -42,7 +42,7 @@ const Nav = () => {
 				</nav>
 
 				<div className="header-actions">
-					<div id="cta-btn">Let's Talk</div>
+					<div id="cta-btn"> <a href="https://wa.me/qr/EXDPSY577V5AO1" className="social-cta" aria-label="whatapp"><span>  Let's talk  </span> </a></div>
 				
 
 					<button className="menu-toggle" onClick={() => setOpen(s => !s)} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open

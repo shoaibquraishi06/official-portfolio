@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
 import heroImg from  "../assets/heroimage.png"
+// import { useNavigate } from 'react-router-dom'
 import '../styles/AboutMe.css'
 
 const AboutMe = () => {
   useEffect(() => {
+  
+// const Navigate = useNavigate()
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (prefersReducedMotion) return
 
@@ -44,7 +47,7 @@ const AboutMe = () => {
         <div className="about-right">
           <div className="about-text reveal">
             <p>
-             I’m a web developer crafting clean, accessible experiences that blend performance, aesthetics, and purpose, turning ideas into fast, scalable products with modern stacks. I obsess over details, champion UX, and iterate with data to build interfaces that feel effortless and deliver measurable real impact for users and businesses at scale.
+           "I'm a Full-Stack Web Developer who helps startups and small businesses build fast, clean, and conversion-focused websites. I don't just write code — I solve business problems through technology. Whether you need a landing page, a full web app, or an e-commerce store, I deliver results on time, every time."
             </p>
           </div>
 
@@ -55,19 +58,20 @@ const AboutMe = () => {
             </div>
 
             <div className="about-card reveal">
-              <h4 id='about-det'>Experience</h4>
-              <p className="stat">1 yrs</p>
+              <h4 id='about-det'>On-time Delivery</h4>
+              <p className="stat">100%</p>
             </div>
 
             <div className="about-card reveal">
-              <h4 id='about-det'>Clients</h4>
-              <p className="stat">0</p>
+              <h4 id='about-det'>Satisfaction</h4>
+              <p className="stat">100%</p>
             </div>
     
-             <button className='mobile'  id='cv-button'> CV Download</button>
+             <button className='mobile'  id='cv-button'> <a href="https://wa.me/qr/EXDPSY577V5AO1" className="social-cta" aria-label="whatapp"><span>  Let's talk together  </span> </a></button>
 
           </div>
-            <button  className='laptop'  id='cv-button'> CV Download</button>
+            <button  className='laptop'  id='cv-button'>
+              <a href="https://wa.me/qr/EXDPSY577V5AO1" className="social-cta" aria-label="whatapp"><span>  Let's talk together  </span> </a></button>
 
         </div>
           <div className="end-line"></div>
