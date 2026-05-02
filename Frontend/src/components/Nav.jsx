@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FiMenu, FiX, FiSun, FiMoon, } from 'react-icons/fi';
   import { FaWhatsapp } from "react-icons/fa";
+  import Logo from "../assets/Logo.png"
 import '../styles/Nav.css'
 
 const links = [
@@ -24,7 +25,7 @@ const Nav = () => {
 				   </div>
 			<div className="container header-inner">
 				<div className="brand">
-					<img  loading="lazy" src="/src/assets/logoImage.png" alt="logo" className="brand-logo" />
+					<img  loading="lazy" src={Logo} alt="logo" className="brand-logo" />
 					<span className="brand-title">CodeCanvas</span>
 				</div>
 
